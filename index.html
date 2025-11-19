@@ -1,32 +1,30 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Embed — My Gradio App</title>
-  <style>
-       body, .gradio-container {
-        background-color: #111 !important;
-        color: white !important;
-    }
-    
-      .gr-button {
-        background-color: #444 !important;
-        color: white !important;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Compressor + Upsizer</h1>
-  </header>
+<title>Compressor + Upsizer</title>
 
-  <main class="container">
-    <div class="frame-wrap">
-      <!-- REPLACE the URL below with your app URL -->
-      <iframe src="https://sanskrutil-compressor-upsizer.hf.space" title="Compressor + Upsizer"></iframe>
-    </div>
-    <p class="note">If your app refuses to load, make sure the URL is public and allows embedding (some sites disallow iframes).</p>
-  </main>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: #ffffff; /* change page background */
+    }
+
+    iframe {
+        width: 100vw;
+        height: 100vh;
+        border: none;
+    }
+</style>
+
+</head>
+
+<body>
+    <iframe 
+        src="https://sanskrutil-compressor-upsizer.hf.space" 
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+    </iframe>
 </body>
 </html>
