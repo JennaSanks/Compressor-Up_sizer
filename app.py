@@ -224,7 +224,7 @@ with gr.Blocks(theme=gr.themes.Base(),
         background-color: #4F46E5 !important;
         color: white !important;
         border-radius: 10px !important;
-        padding: 8px 16px !important;
+        padding: 80px 160px !important;
     }
 
     .gr-input, .gr-textbox, .gr-dropdown {
