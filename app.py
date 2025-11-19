@@ -214,7 +214,27 @@ def compress_images(uploaded_files, target_size, target_unit, output_format, all
         return None, f"Unhandled error in compress_images(): {e}\n\nTraceback:\n{tb}"
 
 # ---------------- UI ----------------
-with gr.Blocks(theme=gr.themes.Base()) as demo:
+with gr.Blocks(
+    theme=gr.themes.Base(),
+    css="""
+    body, .gradio-container {
+        background-color: #ffffff !important;  /* your background color */
+    }
+
+    .gr-button {
+        background-color: #4F46E5 !important;
+        color: white !important;
+        border-radius: 10px !important;
+        padding: 8px 16px !important;
+    }
+
+    .gr-input, .gr-textbox, .gr-dropdown {
+        background-color: #fff !important;
+        border-radius: 8px !important;
+    }
+
+    """
+) as demo:
     gr.Markdown("# Image Compressor — Upsize Option")
 
     with gr.Row():
